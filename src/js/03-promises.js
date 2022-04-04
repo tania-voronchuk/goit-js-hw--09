@@ -28,7 +28,7 @@ function createPromise(position, delay) {
     }, delay);
   });
 
-  promise
+promise
     .then(({ position, delay }) => {
       Notiflix.Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
     })
